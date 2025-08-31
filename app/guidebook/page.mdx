@@ -1,0 +1,337 @@
+export const metadata = { title: 'Guidebook' }
+
+<style>{`
+  .guidebook-container {
+    background: #0f172a;
+    color: #f1f5f9;
+    min-height: 100vh;
+    padding: 0;
+    font-family: inherit;
+  }
+  .guidebook-header {
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1rem 1.5rem 1rem;
+    border-bottom: 1px solid #334155;
+    background: transparent;
+  }
+  .guidebook-header-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f472b6;
+    letter-spacing: -0.01em;
+  }
+  .guidebook-header-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    background: #a21caf;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .guidebook-header-link:hover,
+  .guidebook-header-link:focus-visible {
+    background: #d946ef;
+    outline: none;
+  }
+  .guidebook-main {
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 3rem 1rem;
+    background: #0f172a;
+  }
+  .guidebook-main h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #f472b6;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    letter-spacing: -0.01em;
+  }
+  .guidebook-main h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .guidebook-main h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #38bdf8;
+    margin-top: 1.5rem;
+    margin-bottom: 0.3rem;
+  }
+  .guidebook-main p {
+    color: #cbd5e1;
+    margin-bottom: 1.1rem;
+    line-height: 1.7;
+    font-size: 1.05rem;
+  }
+  .guidebook-main ul, .guidebook-main ol {
+    margin-left: 1.25rem;
+    margin-bottom: 1.1rem;
+    color: #f1f5f9;
+    font-size: 1.05rem;
+  }
+  .guidebook-main li {
+    margin-bottom: 0.4rem;
+    line-height: 1.6;
+  }
+  .guidebook-main strong {
+    color: #f472b6;
+    font-weight: 700;
+  }
+  .guidebook-main em {
+    color: #fbbf24;
+    font-style: italic;
+  }
+  .guidebook-main a {
+    color: #38bdf8;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  .guidebook-main blockquote {
+    border-left: 3px solid #f472b6;
+    padding-left: 1rem;
+    color: #fbbf24;
+    margin: 1.5rem 0;
+    background: #1e293b;
+    border-radius: 0.5rem;
+    font-style: italic;
+  }
+  .guidebook-main hr {
+    border: none;
+    border-top: 1px solid #334155;
+    margin: 2.5rem 0;
+  }
+  .guidebook-main code {
+    background: #1e293b;
+    color: #fbbf24;
+    padding: 0.15em 0.4em;
+    border-radius: 0.3em;
+    font-size: 0.98em;
+  }
+  .guidebook-main .reference-list {
+    font-size: 0.98rem;
+    color: #94a3b8;
+    margin-top: 2.5rem;
+  }
+  @media (max-width: 640px) {
+    .guidebook-header, .guidebook-main {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .guidebook-header {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: stretch;
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+    }
+    .guidebook-header-link {
+      width: 100%;
+      justify-content: center;
+    }
+    .guidebook-main h1 {
+      font-size: 1.5rem;
+    }
+    .guidebook-main h2 {
+      font-size: 1.1rem;
+    }
+  }
+`}</style>
+
+<div className="guidebook-container">
+  <header className="guidebook-header">
+    <span className="guidebook-header-title" aria-label="Retroactive UBI Home">
+      retroactiveubi.com
+    </span>
+    <nav>
+      <a
+        href="/"
+        className="guidebook-header-link"
+        aria-label="Back to Home"
+      >
+        Home
+      </a>
+    </nav>
+  </header>
+
+  <main className="guidebook-main">
+ 
+
+
+
+# Guidebook
+
+*Guidebook to the RUBI Interconnected Map*
+
+## Introduction
+
+The RUBI Interconnected Map is a framework that reimagines digital infrastructure and public policy as a cohesive, human-centric ecosystem. At its core lies a foundational **Identity Layer** ensuring that every individual can be uniquely identified and trusted in the digital realm. Built atop this is **RUBI**, a secondary core concept representing a **Recurring Universal Basic Income** distribution mechanism.
+
+Surrounding these cores are twelve main policy “petals” – key domains of public policy that have been redefined and interconnected through the lens of robust identity and equitable digital distribution. Each petal contains sub-nodes (specific initiatives or components) that detail how that domain leverages the identity and RUBI layers.
+
+This guidebook explains each layer and domain step by step – from foundational identity principles like **PHCs** and **Web‑of‑Trust**, through the **RUBI** distribution model, and outwards to sectoral applications – illustrating with real-world examples how this infrastructure can solve concrete digital and social challenges across the globe. The goal is to provide first-time readers, including policymakers and technical implementers, with a clear conceptual roadmap of the RUBI Interconnected Map and its potential real-world impact.
+
+## Core Identity Layer
+
+At the heart of the map is the **Identity Layer**, the foundational core node upon which everything else builds. The Identity Layer is designed to provide universal, secure, and self-sovereign identity for individuals, answering the crucial question: “Who is a unique human in the system?” It is grounded in two key principles: **Personhood Credentials (PHCs)** and the **Web‑of‑Trust** model.
+
+**Personhood Credentials (PHCs).** A PHC is a proof‑of‑personhood – a credential that guarantees a digital identity corresponds to a real, unique human being (see: https://arxiv.org/html/2502.16375v1). Unlike traditional IDs that can be issued multiple times or forged, PHCs aim to prevent any individual from obtaining more than one valid credential. They often leverage biometrics or other human-specific features in privacy-preserving ways. For example, the Worldcoin project has implemented a PHC-based system called World ID, using iris scans via its “Orb” device to ensure each user is a unique person. In practice, this means if Alice and Bob each have a PHC, we can trust they are two distinct living persons – a vital property for fair allocation of resources or votes. PHCs emphasize minimal disclosure (proving you are human without revealing unnecessary data) and are typically verified through zero-knowledge proofs or similar techniques. The overarching goal is to include everyone: as researchers note, the lack of legal identity for an estimated **850 million** people worldwide is “one of the most morally grave public problems of our age,” depriving those individuals of recognition and access to basic rights. A robust identity layer anchored by PHCs would ensure universal legal identity “regardless of nationality, ethnicity, geographic location, or any other attribute” – a transformative step toward digital equality.
+
+**Web‑of‑Trust Verification.** The second pillar of the Identity Layer is the **Web‑of‑Trust**, a decentralized approach to establishing identity trustworthiness through community attestations. In a Web‑of‑Trust, existing verified users vouch for new users, creating a network of mutual trust rather than relying on a single central authority. This approach has long been used in PGP public key networks and is now being applied to personhood verification. For instance, the Ethereum-based **Proof of Humanity (PoH)** registry combines webs of trust, reverse Turing tests, and dispute resolution to build a sybil‑proof list of real humans (see: https://blog.kleros.io/proof-of-humanity-an-explainer/). New applicants to PoH must upload a short video and have an existing member vouch for them; any fraudulent submissions can be challenged through a decentralized court system. Only when community vetting (and any challenges) are resolved does an identity become verified.
+
+Such Web‑of‑Trust mechanisms take advantage of social networks and local trust: if Alice trusts Bob and Bob trusts Charlie, then Alice can be more confident Charlie is genuine. Over time, a robust trust graph emerges. In the RUBI map’s Identity Layer, Web‑of‑Trust sub-nodes ensure that identity verification remains distributed and resilient – no single government or corporation controls who gets an ID. This is especially important for global systems; it builds trust from the ground up. One sub-node, for example, is devoted to **Community Attestation Networks**, in which local community leaders or peers verify one another’s identities in person. This bottoms-up verification, paired with top-down checks (like biometric PHCs), creates a redundant, fraud-resistant identity system.
+
+**Why Identity Matters.** Establishing this strong Identity Layer is foundational for everything else in the map. Without it, none of the outer policy applications can ensure fairness or inclusion. The United Nations has highlighted: “If you cannot prove who you are, you are deprived of access to a host of public services such as public health care, legal protection in case of abuse, and social welfare provisions.” Legal identity is a prerequisite to exercise rights and receive benefits. In many countries, lack of an ID means a child can’t enroll in school or a family can’t claim food rations. The Identity Layer of RUBI’s map proposes to solve this by providing every person a globally recognized, self-sovereign identity anchored in both cutting-edge technology (PHCs with biometrics or other verification) and human social structures (Web‑of‑Trust). It also emphasizes privacy and user control – individuals should be able to prove their uniqueness and eligibility without divulging sensitive personal information. For example, a sub-node on **Selective Disclosure Credentials** enables someone to prove “I am an adult resident of Region X” to access a service, without revealing name or exact age. This built-in respect for privacy is crucial for user acceptance and safety. With the Identity Layer in place, we have a trustworthy digital “metabolism” – each person is like a unique cell that can be reliably identified, but no central power can impersonate or duplicate them. This sets the stage for the next layer: distributing benefits and value in a fair, automated way via **RUBI**.
+
+## Secondary Core: RUBI (Universal Basic Income Distribution)
+
+Surrounding the identity core is **RUBI**, the secondary core node of the map. RUBI stands for a **Resilient/Recurring Universal Basic Income** – essentially a mechanism to distribute a basic level of economic benefit to every verified person. If the Identity Layer answers “who is entitled,” the RUBI layer addresses “what they receive and how.” Conceptually, RUBI is a universal dividend of social or economic value that is allocated equally (or equitably) among all human participants in the system. This layer leverages the secure identity (one person = one identity) to ensure the distribution is fair and not exploited by bots, duplicates or fraudsters. In essence, RUBI provides an **economic floor** in the digital society – a baseline resource that empowers individuals in all the outer policy domains.
+
+**Design of RUBI Distribution.** The map’s sub-nodes here detail how such a universal income could be implemented and governed. One sub-node focuses on the **Currency/Token Mechanism** – for example, whether RUBI is paid in fiat currency via bank accounts, or as a digital token or voucher. Another sub-node outlines the **Allocation Rules**: is it the same fixed amount for everyone, or does it prioritize those in need? The core idea is to keep it unconditional and universal, while potentially layering additional support for vulnerable groups. The RUBI layer likely also includes a **Funding Mechanism** sub-node, describing where the money or value comes from (e.g., fees on commons/data, carbon dividends, or wealth taxes).
+
+**Real-World Inspirations for RUBI.** Elements of RUBI are already being tested: the **Proof of Humanity** project issues a continuous **UBI token** to each verified human; Alaska’s **Permanent Fund Dividend** distributed **$1,312** per resident in 2023 funded by oil revenues, a model of universal resource dividend (https://www.businessinsider.com/alaska-permanent-fund-basic-income). In several countries, linking benefits to national digital IDs has eliminated “ghost” beneficiaries, saving resources that can be redirected to genuine recipients (see World Bank and India Aadhaar examples below).
+
+**How RUBI Interacts with Identity.** Critically, RUBI is only viable at scale because of the Identity Layer beneath it. The one‑person‑one‑unit rule enforced by PHCs/Web‑of‑Trust means RUBI can be generous without fear of exploitation by fake identities. This principle has already cleaned up subsidy lists and payrolls in multiple countries, demonstrating what’s possible when distribution is anchored in verified identity.
+
+---
+
+## 1. Universal Health and Well‑Being
+
+**Goals.** Ensure equitable access to healthcare and improved public health outcomes by making health records portable, enabling cross-border credentialing, and funding prevention via incentives.
+
+- **Universal Patient ID & Records** – lifelong, portable health identity and records linked to an individual’s core ID.
+- **Cross‑Border Health Credentialing** – vaccination/insurance credentials accepted internationally via verifiable attestations.
+- **Preventive Care Incentives** – RUBI-based incentives (top‑ups) for check‑ups and wellness.
+
+**Why it matters.** Lack of legal ID locks people out of care. Digital identity and payments cut friction and enable continuity of care for migrants and refugees.
+
+## 2. Education and Skills Development
+
+**Goals.** Democratize learning and make credentials global and tamper‑proof; encourage lifelong learning with “learn & earn”.
+
+- **Digital Learning Credentials** – verifiable, portable certificates tied to identity.
+- **Learn‑and‑Earn Incentives** – RUBI bonuses for completing skills milestones.
+- **Global Skill Registry & Matching** – consented skills graph for jobs and mobility.
+
+## 3. Financial and Economic Inclusion
+
+**Goals.** Bank the unbanked, unlock credit for informal workers, and streamline payments.
+
+- **Inclusive KYC & Banking Access** – use digital ID for instant e‑KYC and account opening.
+- **Microfinance & Credit Histories** – portable, alternative credit built from payment behavior and community attestations.
+- **Transparent, Efficient Payments** – direct transfers and low‑cost remittances via identity rails.
+
+## 4. Governance and Civic Participation
+
+**Goals.** Digitize public services and strengthen democracy with secure e‑voting and participatory tools.
+
+- **One ID, One Window** – unified portal for services, e‑signatures, and forms.
+- **E‑Voting & Civic Participation** – secure online voting and continuous input backed by one‑person‑one‑vote.
+- **Transparency & Accountability** – traceable, auditable service delivery and procurement.
+
+## 5. Justice and Public Safety
+
+**Goals.** Ensure fairness under the law and safer communities without sacrificing rights.
+
+- **Legal Identity for All & Case Management** – portable legal persona; e‑justice workflows tied to identity.
+- **Crime Prevention & Accountability** – reduce duplicate/fake IDs; verified, lawful in‑field checks.
+- **Community Trust & Reporting** – verified, privacy‑preserving civic reporting and restorative justice tools.
+
+## 6. Social Protection and Welfare
+
+**Goals.** Eliminate ghosts and exclusion; make benefits portable and dynamic.
+
+- **Unified Beneficiary Registry** – de‑duplicate and target programs using verified ID.
+- **Portable & Universal Social Security** – benefits follow the person across jobs/regions.
+- **Dynamic Support & CCTs** – automated top‑ups based on verified life events or shocks.
+
+_Example: India’s PDS overhaul reported eliminating tens of millions of fake ration cards and enabled portability for 800M beneficiaries, with error rates of &lt;1% in authenticated food transactions._
+
+## 7. Environment and Climate Sustainability
+
+**Goals.** Align human welfare with planetary welfare via dividends and incentives.
+
+- **Carbon Dividends / Personal Allowances** – per‑capita rebates or credits delivered via RUBI.
+- **Resource Entitlements & Conservation** – dividends to verified residents for protecting commons.
+- **Environmental Data & Governance** – citizen science and enforcement via verified contributions.
+
+## 8. Energy and Utilities Access
+
+**Goals.** Make utilities universal and efficient; replace leaky subsidies with direct benefits.
+
+- **Direct Benefit Transfer for Utilities** – charge market rates; reimburse verified users via RUBI.
+- **Universal Service Enrollment** – proactive onboarding with ID + GIS; guaranteed minimums.
+- **PAYG + Smart Tokens** – identity‑linked utility credits and histories.
+
+## 9. Infrastructure and Transport
+
+**Goals.** Seamless mobility; participatory planning; secure land & housing records.
+
+- **Smart Transit & Mobility Access** – account‑based ticketing and automatic concessions.
+- **Urban Planning & Feedback** – verified, spam‑free civic input.
+- **Housing & Land Records** – secure titles and rental histories tied to identity.
+
+## 10. Food and Agriculture Systems
+
+**Goals.** Zero hunger; fair producer support; trusted supply chains.
+
+- **Food Security & Rationing** – person‑centric entitlements, portable and fraud‑resistant.
+- **Farmer Inclusion & Subsidies** – direct income support and disaster top‑ups to verified farmers.
+- **Traceability & Market Access** – identity‑backed producer networks and procurement.
+
+## 11. Housing and Community Development
+
+**Goals.** End chronic homelessness; empower neighborhoods; protect tenants.
+
+- **Homelessness Prevention & Shelter** – immediate onboarding and vouchers via ID.
+- **Community Funds & Local Projects** – participatory budgeting with guaranteed pools.
+- **Rental & Tenant Protection** – portable rental histories; automated legal alerts.
+
+## 12. Digital and Information Society
+
+**Goals.** Universal connectivity; privacy‑first data rights; digital literacy at scale.
+
+- **Universal Digital Access** – free/discounted data/device support via identity and RUBI.
+- **Privacy & Data Protection** – SSI, selective disclosure, encryption, user control.
+- **Digital Literacy & Civic Tech** – incentives for skills; open APIs for innovation.
+
+## Conclusion: A Layered Blueprint for Inclusive Growth
+
+Layer by layer, the RUBI Interconnected Map constructs a blueprint for an inclusive, human‑centered digital society. It begins with the **Identity Layer**, establishing every person’s existence in the digital realm with security and dignity. On this bedrock, it adds the **RUBI** layer of universal basic income and resource sharing, directly addressing economic inequality. Together, these cores empower the twelve policy petals – from health and education to environment and digital governance – infusing them with new capabilities and efficiencies.
+
+Common themes run throughout: **universality** (leave no one behind), **efficiency and integrity** (eliminate ghosts and leakage), and **empowerment** (agency through identity and income). Real‑world trials – from Alaska’s dividend to Estonia’s e‑governance to Aadhaar‑enabled reforms – show the promise. The task ahead is careful implementation with strong privacy safeguards and global cooperation.
+
+---
+
+## References
+
+- Personhood Credentials: Human‑Centered Design Recommendation Balancing Security, Usability, and Trust — https://arxiv.org/html/2502.16375v1
+- Optimistic plan would pair universal legal identity with basic income program — https://www.biometricupdate.com/202506/optimistic-plan-would-pair-universal-legal-identity-with-basic-income-program
+- Proof of Humanity – An Explainer — https://blog.kleros.io/proof-of-humanity-an-explainer/
+- Alaska Permanent Fund: How It Works (UBI‑like dividend) — https://www.businessinsider.com/alaska-permanent-fund-basic-income
+- Govt blocks 4.08 crore duplicate/inactive LPG connections (Aadhaar) — https://energy.economictimes.indiatimes.com/news/oil-and-gas/govt-blocks-4-08-crore-duplicate-or-inactive-lpg-connections-aadhaar-seeding-at-92-44-pc-puri/123115021
+- World Bank: Digital Identity Toolkit (examples on ghost removal) — https://documents.worldbank.org/curated/en/147961468203357928/pdf/912490WP0Digit00Box385330B00PUBLIC0.pdf
+- UNESCO: Recognizing migrants’ and refugees’ qualifications — https://unesdoc.unesco.org/ark:/48223/pf0000366312
+- The PIE News: Blockchain to revolutionise academic credentials — https://thepienews.com/blockchain-set-to-revolutionise-academic-credentials-and-portability/
+- e‑Estonia: Online national elections & e‑governance — https://e-estonia.com/how-did-estonia-carry-out-the-worlds-first-mostly-online-national-elections/
+- Economic Times: PDS digitisation & fake ration cards — https://economictimes.indiatimes.com/news/india/digitisation-drive-transforms-pds-system-5-8-crore-fake-ration-cards-eliminated-govt/articleshow/115482695.cms
+- WFP USA: Blockchain food assistance & iris ID — https://www.wfpusa.org/news/blockchain-tech-helps-refugees-grocery-shop-in-conflict-zones/
+
+</main>
+
+</div>

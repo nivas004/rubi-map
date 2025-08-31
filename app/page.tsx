@@ -221,7 +221,28 @@ export default function Home() {
       <style>{`
         .focus-ring:focus-visible { outline: 3px solid #f472b6; outline-offset: 2px; border-radius: 10px; }
         text.label { pointer-events: none; }
+        @media (max-width: 375px) {
+          .rubi-header { flex-direction: column; gap: 0.5rem; align-items: stretch; }
+          .rubi-header-link { width: 100%; justify-content: center; }
+        }
       `}</style>
+
+      {/* Header with Guidebook link */}
+      <header className="w-full max-w-4xl mb-6 flex items-center justify-between rubi-header">
+        <span className="text-2xl font-bold tracking-tight text-fuchsia-400 block" aria-label="Retroactive UBI Home">
+          retroactiveubi.com
+        </span>
+        <nav>
+          <a
+            href="/guidebook"
+            className="rubi-header-link inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-fuchsia-700 hover:bg-fuchsia-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-fuchsia-400 text-white font-semibold text-base shadow transition-colors"
+            style={{ minWidth: 120, textAlign: "center" }}
+            aria-label="Open the Guidebook"
+          >
+            Guidebook
+          </a>
+        </nav>
+      </header>
 
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-2">
         Retroactive UBI: <span className="text-fuchsia-400">Interactive Policy Map</span>

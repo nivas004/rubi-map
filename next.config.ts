@@ -1,10 +1,13 @@
-import type { NextConfig } from "next";
+// next.config.ts
+import createMDX from '@next/mdx'
+import type { NextConfig } from 'next'
+
+const withMDX = createMDX({}) // no providerImportSource
 
 const nextConfig: NextConfig = {
-  // Don’t block production builds on lint or type issues (we can re-enable later)
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-};
+}
 
-export default nextConfig;
-
+export default withMDX(nextConfig)
