@@ -224,7 +224,7 @@ export default function Home() {
       `}</style>
 
       <h1 className="text-4xl md:text-5xl font-bold text-center mb-2">
-        Retroactive UBI: <span className="text-fuchsia-400">Interactive Policy Map</span>
+        Retroactive UBI: <span className="text-fuchsia-400">The Interconnected Map</span>
       </h1>
       <p className="text-center max-w-4xl mb-8 text-lg text-slate-300">
         Hover a policy node to reveal concrete <span className="font-semibold">PHC/FPP</span> and <span className="font-semibold">RUBI</span> use-cases.
