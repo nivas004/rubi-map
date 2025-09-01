@@ -1,26 +1,11 @@
 'use client';
 
 import dynamic from "next/dynamic";
-import { useEffect, useState } from "react";
 
 // Dynamically import to avoid SSR issues with window
 const MapDesktop = dynamic(() => import("./components/MapDesktop"), { ssr: false });
-const MapMobile = dynamic(() => import("./components/MapMobile"), { ssr: false });
-
-function useIsMobile() {
-  const [isMobile, setIsMobile] = useState(false);
-  useEffect(() => {
-    const check = () => setIsMobile(window.innerWidth < 768);
-    check();
-    window.addEventListener("resize", check);
-    return () => window.removeEventListener("resize", check);
-  }, []);
-  return isMobile;
-}
 
 export default function Home() {
-  const isMobile = useIsMobile();
-
   return (
     <div className="min-h-screen bg-slate-950 text-white flex flex-col items-center py-10 px-4">
       <style>{`
@@ -59,7 +44,7 @@ export default function Home() {
         className="w-full max-w-[1200px] flex justify-center items-start"
         style={{ minHeight: 650, marginTop: 0 }}
       >
-        {isMobile ? <MapMobile /> : <MapDesktop />}
+        <MapDesktop />
       </div>
       <footer className="mt-8 text-xs text-slate-500 text-center max-w-2xl">
         Built with privacy-first identity principles. Questions / collab: <span className="underline">hello@retroactiveubi.com</span>

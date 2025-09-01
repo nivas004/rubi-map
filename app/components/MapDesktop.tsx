@@ -49,7 +49,7 @@ export default function MapDesktop() {
   const { hoverCapable, coarsePointer } = useInputCapabilities();
 
   const W = 1200;
-  const H = 700; // Reduced height for tighter fit
+  const H = 700;
   const center = { x: W / 2, y: H / 2 };
   const innerR = 120;
   const outerR = 300;
@@ -115,7 +115,7 @@ export default function MapDesktop() {
   const PETAL_R = coarsePointer ? 30 : 26;
 
   return (
-    <div className="w-full max-w-[1600px] mx-auto flex flex-row gap-8 justify-center items-start" style={{ minHeight: 700 }}>
+    <div className="w-full max-w-[1600px] mx-auto flex flex-col md:flex-row gap-4 justify-center items-start">
       <style>{`
         .focus-ring:focus-visible { outline: 3px solid #f472b6 !important; outline-offset: 2px; border-radius: 10px; }
         text.label { pointer-events: none; }
@@ -126,7 +126,7 @@ export default function MapDesktop() {
         }
         @media (max-width: 900px) {
           .map-desktop-svg { width: 100vw !important; height: 300px !important; }
-          .info-panel-desktop { display: none !important; }
+          /* .info-panel-desktop { display: none !important; } */
         }
       `}</style>
       {/* Left: SVG Map */}
@@ -334,14 +334,13 @@ export default function MapDesktop() {
         </svg>
       </div>
       {/* Right: Info Panel */}
-      <div className="flex flex-col justify-start items-start flex-shrink-0 info-panel-desktop" style={{ minWidth: 380, maxWidth: 480 }}>
+      <div className="flex flex-col justify-start items-start flex-shrink-0 info-panel-desktop w-full md:w-auto mt-4 md:mt-0" style={{ minWidth: 380, maxWidth: 480 }}>
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           className="bg-slate-900/70 border border-slate-700 rounded-2xl p-5 w-full"
           style={{
             minHeight: 90,
-            // height: 110, // <-- Removed to allow the panel to expand with content
             transition: "height 0.2s",
             boxShadow: "0 4px 32px 0 #0004",
             display: "flex",
