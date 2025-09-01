@@ -341,7 +341,7 @@ export default function MapDesktop() {
           className="bg-slate-900/70 border border-slate-700 rounded-2xl p-5 w-full"
           style={{
             minHeight: 90,
-            height: 110,
+            // height: 110, // <-- Removed to allow the panel to expand with content
             transition: "height 0.2s",
             boxShadow: "0 4px 32px 0 #0004",
             display: "flex",
